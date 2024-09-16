@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generador de RFC y Consulta de API</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <!-- Formulario/Preguntas para Generar RFC -->
+        <div class="form-container">
+            <h2>Practica 2- RFC</h2>
+            <form id="rfc-form">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="apellidoP">Apellido Paterno:</label>
+                <input type="text" id="apellidoP" name="apellidoP" required>
+
+                <label for="apellidoM">Apellido Materno:</label>
+                <input type="text" id="apellidoM" name="apellidoM">
+
+                <label for="fechaN">Fecha de Nacimiento:</label>
+                <input type="date" id="fechaN" name="fechaN" required>
+
+                <button type="button" id="Generar">Generar un RFC</button>
+
+                <label for="RFC">RFC:</label>
+                <input type="text" id="RFC" name="RFC" readonly>
+            </form>
+        </div>
+
+        <!-- Formulario/preguntas para Consultar API -->
+        <div class="form-container">
+            <h2>AJAX - API REST</h2>
+            <form id="api-form">
+                <label for="idusuario">Ingresa un Id de Usuario:</label>
+                <input type="text" id="idusuario" name="idusuario" required>
+
+                <button type="button" id="consultarUsuario">Consultar API Rest</button>
+
+                <label for="nombreUsuario">Nombre:</label>
+                <input type="text" id="nombreUsuario" name="nombreUsuario" readonly>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" readonly>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
